@@ -85,3 +85,17 @@ contact.childNodes[7].innerText = siteContent["contact"]["email"];
 let footer = document.querySelector("footer");
 footer.innerHTML="<p>" + siteContent["footer"]["copyright"] + "</p>";
 footer.style = " background-color: #fff; color: #000";
+
+// New Elements
+let newItems = document.querySelector(".container header nav")
+let newItem = document.createElement("a");
+newItem.innerText = "Leadership";
+newItem.style.color = "green";
+newItem.href = "#";
+newItems.prepend(newItem);
+
+let newItem1 = document.createElement("a");
+newItem1.innerText = "Videos";
+newItem1.style.color = "green";
+newItem1.href = "#";
+newItems.appendChild(newItem1);
